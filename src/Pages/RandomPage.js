@@ -6,7 +6,7 @@ function RandomPage() {
 
     return (
         <div>
-            <RandomDisplay />
+            <RandomDisplay randomAdjective={this.props.randomAdjective} randomNoun={this.props.randomNoun} />
             <Generate />
         </div>
 

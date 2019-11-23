@@ -5,8 +5,8 @@ function RandomDisplay() {
 
     return (
         <div className="rd-div">
-            <span>Adjective</span>
-            <span>Noun</span>
+            <span>Adjective: {this.state.randomAdjective}</span>
+            <span>Noun {this.state.randomNoun}</span>
         </div>
     )
 
