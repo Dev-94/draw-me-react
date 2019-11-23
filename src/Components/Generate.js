@@ -5,7 +5,7 @@ function Generate() {
 
     return (
         <div className="g-div">
-            <p>Generate</p>
+            <button>Generate</button>
 
         </div>
 

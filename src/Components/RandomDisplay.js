@@ -5,7 +5,8 @@ function RandomDisplay() {
 
     return (
         <div className="rd-div">
-            <p>RandomDisplay</p>
+            <span>Adjective</span>
+            <span>Noun</span>
         </div>
     )
 
