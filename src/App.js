@@ -3,24 +3,16 @@ import RandomPage from './Pages/RandomPage';
 import './App.css';
 
 class App extends React.Component {
-  state = [
-    adjective = {
-      1: 'funny',
-      2: 'string',
-      3: 'lazy',
-
-    },
-    noun = {
-      1: 'dog',
-      2: 'elephant',
-      3: 'house',
-
-
+  constructor(props) {
+    super(props)
+    this.state = {
+      adjective: '',
+      noun: ''
     }
-  ];
+    var randomAdjective = Math.random(this.state.adjective)
+    var randomNoun = Math.random(this.state.noun)
+  }
 
-  // var randomAdjective = Math.random(this.state.adjective)
-  // var randomNoun = Math.random(this.state.noun)
 
 
 

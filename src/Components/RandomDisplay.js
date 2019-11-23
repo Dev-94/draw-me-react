@@ -1,14 +1,18 @@
 import React from 'react'
 import './RandomDisplay.css'
 
-function RandomDisplay() {
+class RandomDisplay extends React.Component {
 
-    return (
-        <div className="rd-div">
-            <span>Adjective: {this.state.randomAdjective}</span>
-            <span>Noun {this.state.randomNoun}</span>
-        </div>
-    )
+    render() {
+
+
+        return (
+            <div className="rd-div">
+                <span>Adjective: {this.props.randomAdjective}</span>
+                <span>Noun: {this.props.randomNoun}</span>
+            </div>
+        )
+    }
 
 
 }
