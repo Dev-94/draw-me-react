@@ -12,12 +12,12 @@ class RandomPage extends React.Component {
 
     }
     // update state with words generated
-    async updateState(e) {
-        var randomWords = this.props.words
-        console.log('state is being updated')
-        await this.setState({
-            words: randomWords
-        })
+    updateState(state) {
+        console.log('randomWords')
+        this.setState((state) => {
+            return this.words = this.randomWords
+        }
+        )
     }
 
 
@@ -28,7 +28,8 @@ class RandomPage extends React.Component {
                     words={this.state.words}
                 />
                 <Generate
-                    generate={this.updateState}
+                    updateState={this.state.updateState}
+                    randomWords={this.randomWords}
                 />
             </div >
 
