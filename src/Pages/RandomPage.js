@@ -8,37 +8,32 @@ class RandomPage extends React.Component {
         super(props)
         this.state = {
             adjective: '',
-            noun: ''
+            noun: '',
+            // hasBeenClicked: false
         }
 
         // creates random adjectives and nouns
         // setState to returns
         // set 'Generate' button to roll dice
-        let randomAdjective = () => {
+
+
+
+        function randomAdjective() {
             let max = adjectives.length
             let randomNum = Math.floor(Math.random() * Math.floor(max))
             console.log(adjectives[randomNum])
         }
-        randomAdjective()
 
-        let randomNoun = () => {
+        function randomNoun() {
             let max = nouns.length
             let randomNum = Math.floor(Math.random() * Math.floor(max))
             console.log(nouns[randomNum])
         }
-        randomNoun()
 
 
+        // if button is clicked generate new adj and noun, pass through to randomPage and set at Adj and Noun component
 
 
-
-        function generate() {
-            this.setState({
-                adjective: randomAdjective(),
-                noun: randomNoun()
-            })
-
-        }
     }
 
 
@@ -50,7 +45,9 @@ class RandomPage extends React.Component {
         return (
             <div>
 
-                <RandomDisplay randomAdjective={this.state.randomAdjective} randomNoun={this.state.randomNoun} />
+                <RandomDisplay
+                    randomAdjective={this.state.randomAdjective}
+                    randomNoun={this.state.noun} />
                 <Generate />
             </div >
 
