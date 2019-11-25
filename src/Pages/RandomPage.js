@@ -7,41 +7,15 @@ class RandomPage extends React.Component {
     constructor() {
         super()
         this.state = {
-            adjective: 'funny',
-            noun: 'dog',
+            // adjective: 'funny',
+            // noun: 'dog',
+            words: 'fat bunny',
             hasBeenClicked: false
         }
 
     }
-    randomAdjective = (event) => {
-        let max = adjectives.length
-        let randomNum = Math.floor(Math.random() * Math.floor(max))
-        console.log(adjectives[randomNum])
-        let adjective = adjectives[randomNum]
-        return adjective
-    }
+    // set state with words
 
-    randomNoun = (event) => {
-        let max = nouns.length
-        let randomNum = Math.floor(Math.random() * Math.floor(max))
-        console.log(nouns[randomNum])
-        let noun = nouns[randomNum]
-        return noun
-
-    }
-    random(event) {
-        this.randomAdjective()
-        this.randomNoun()
-    }
-    words = (adjective, noun) => {
-        console.log('words')
-        this.random()
-        this.setState({
-            adjective: adjective,
-            noun: noun
-        })
-
-    }
 
 
     render() {
@@ -50,10 +24,10 @@ class RandomPage extends React.Component {
             <div>
 
                 <RandomDisplay
-                    randomAdjective={this.state.adjective}
+                    randomAdjective={this.state.words}
                     randomNoun={this.state.noun} />
                 <Generate
-                    onClick={this.words}
+                    onClick={this.generate}
                 />
             </div >
 

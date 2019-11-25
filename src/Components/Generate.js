@@ -5,7 +5,6 @@ import { adjectives, nouns } from '../words'
 
 class Generate extends React.Component {
 
-
     generate = () => {
         let maxAdjective = adjectives.length
         let maxNoun = nouns.length
@@ -22,7 +21,12 @@ class Generate extends React.Component {
 
         return (
             <div className="g-div" >
-                <button onClick={e => { e.preventDefault(); this.generate() }}>Generate</button>
+                <button
+                    onClick={
+                        e => { e.preventDefault(); this.generate() }
+                    }>
+                    Generate
+                    </button>
 
             </div>
 
