@@ -7,27 +7,21 @@ class RandomPage extends React.Component {
     constructor() {
         super()
         this.state = {
-            // adjective: 'funny',
-            // noun: 'dog',
-            words: 'fat bunny',
-            hasBeenClicked: false
+            words: '',
         }
 
     }
-    // set state with words
+    // update state with words generated
 
 
 
     render() {
-
         return (
             <div>
-
                 <RandomDisplay
-                    randomAdjective={this.state.words}
-                    randomNoun={this.state.noun} />
+                    words={this.state.words}
+                />
                 <Generate
-                    onClick={this.generate}
                 />
             </div >
 
