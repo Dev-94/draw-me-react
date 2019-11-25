@@ -8,8 +8,9 @@ class RandomDisplay extends React.Component {
 
         return (
             <div className="rd-div">
-                <span>Adjective: {this.props.randomAdjective}</span>
-                <span>Noun: {this.props.randomNoun}</span>
+                <span>{this.props.randomAdjective}</span>
+                <br />
+                <span>{this.props.randomNoun}</span>
             </div>
         )
     }

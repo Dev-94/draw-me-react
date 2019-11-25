@@ -7,37 +7,41 @@ class RandomPage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            adjective: '',
-            noun: '',
-            // hasBeenClicked: false
+            adjective: 'funny',
+            noun: 'dog',
+            hasBeenClicked: false
         }
-
-        // creates random adjectives and nouns
-        // setState to returns
-        // set 'Generate' button to roll dice
-
-
-
-        function randomAdjective() {
-            let max = adjectives.length
-            let randomNum = Math.floor(Math.random() * Math.floor(max))
-            console.log(adjectives[randomNum])
-        }
-
-        function randomNoun() {
-            let max = nouns.length
-            let randomNum = Math.floor(Math.random() * Math.floor(max))
-            console.log(nouns[randomNum])
-        }
-
-
-        // if button is clicked generate new adj and noun, pass through to randomPage and set at Adj and Noun component
-
 
     }
+    randomAdjective = (event) => {
+        let max = adjectives.length
+        let randomNum = Math.floor(Math.random() * Math.floor(max))
+        console.log(adjectives[randomNum])
+        let adjective = adjectives[randomNum]
+        return adjective
+    }
 
+    randomNoun = (event) => {
+        let max = nouns.length
+        let randomNum = Math.floor(Math.random() * Math.floor(max))
+        console.log(nouns[randomNum])
+        let noun = nouns[randomNum]
+        return noun
 
+    }
+    random(event) {
+        this.randomAdjective()
+        this.randomNoun()
+    }
+    words = (adjective, noun) => {
+        console.log('words')
+        this.random()
+        this.setState({
+            adjective: adjective,
+            noun: noun
+        })
 
+    }
 
 
     render() {
@@ -46,9 +50,11 @@ class RandomPage extends React.Component {
             <div>
 
                 <RandomDisplay
-                    randomAdjective={this.state.randomAdjective}
+                    randomAdjective={this.state.adjective}
                     randomNoun={this.state.noun} />
-                <Generate />
+                <Generate
+                    onClick={this.words}
+                />
             </div >
 
         )
