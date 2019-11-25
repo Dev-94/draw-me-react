@@ -4,8 +4,8 @@ import Generate from '../Components/Generate'
 import { adjectives, nouns } from '../words'
 
 class RandomPage extends React.Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
         this.state = {
             adjective: 'funny',
             noun: 'dog',
