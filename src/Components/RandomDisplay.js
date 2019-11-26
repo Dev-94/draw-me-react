@@ -1,15 +1,20 @@
 import React from 'react'
 import './RandomDisplay.css'
+import PropTypes from 'prop-types'
 
-class RandomDisplay extends React.Component {
-    render(props) {
-        return (this.props.words === '') ? 'draw me' :
-            <div className="rd-div">
-                <span>
-                    {this.props.words}
-                </span>
-            </div>
-    }
+function RandomDisplay(props) {
+    return (this.props.words === '') ? 'draw me' :
+        <div className="rd-div">
+            <span>
+                {/* may be need to bind props with new state */}
+                {this.props.words}
+            </span>
+        </div>
 }
 
 export default RandomDisplay
+
+RandomDisplay.propTypes = {
+    words: PropTypes.string
+
+}

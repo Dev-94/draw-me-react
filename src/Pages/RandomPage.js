@@ -12,12 +12,22 @@ class RandomPage extends React.Component {
 
     }
     // update state with words generated
-    updateState(state) {
-        console.log('randomWords')
-        this.setState((state) => {
-            return this.words = this.randomWords
-        }
-        )
+    updateState = (randomWords) => {
+        console.log(randomWords)
+        this.setState({
+            words = randomWords
+        })
+    }
+
+    generate = () => {
+        let maxAdjective = adjectives.length
+        let maxNoun = nouns.length
+        let adjIdx = Math.floor(Math.random() * Math.floor(maxAdjective))
+        let nounIdx = Math.floor(Math.random() * Math.floor(maxNoun))
+        console.log(adjectives[adjIdx] + ' ' + nouns[nounIdx])
+        let randomWord = adjectives[adjIdx] + ' ' + nouns[nounIdx]
+        updateState(randomWord)
+
     }
 
 
@@ -28,8 +38,7 @@ class RandomPage extends React.Component {
                     words={this.state.words}
                 />
                 <Generate
-                    updateState={this.state.updateState}
-                    randomWords={this.randomWords}
+                    generate={this.generate}
                 />
             </div >
 
