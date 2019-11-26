@@ -1,11 +1,14 @@
 import React from 'react'
 import './Generate.css'
 import { adjectives, nouns } from '../words'
+import PropTypes from 'prop-types'
 
 
 function Generate(props) {
+    console.log('Gprops is ' + props)
 
     function generateWord(e) {
+        console.log('e is ' + e)
         let maxAdjective = adjectives.length
         let maxNoun = nouns.length
         let adjIdx = Math.floor(Math.random() * Math.floor(maxAdjective))
@@ -36,3 +39,9 @@ function Generate(props) {
 
 
 export default Generate
+
+
+Generate.propTypes = {
+    words: PropTypes.string
+
+}

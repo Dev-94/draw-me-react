@@ -13,10 +13,10 @@ class RandomPage extends React.Component {
     }
     // update state with words generated
     // no passing info in, not firing off
-    updateState = (randomWords) => {
-        console.log(randomWords)
+    updateState = (randomWord) => {
+        console.log('RP is ' + randomWord)
         this.setState({
-            words: randomWords
+            words: randomWord
         })
     }
 
@@ -31,6 +31,7 @@ class RandomPage extends React.Component {
                 />
                 <Generate
                     clicked={this.updateState}
+                    randomWord={this.randomWord}
 
                 />
             </div >
