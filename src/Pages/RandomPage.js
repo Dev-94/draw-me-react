@@ -12,7 +12,7 @@ class RandomPage extends React.Component {
 
     }
     // update state with words generated
-    // no passing info in, not firing off
+    // ************ no passing info in, not firing off
     updateState = (randomWord) => {
         console.log('RP is ' + randomWord)
         this.setState({

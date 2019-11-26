@@ -3,7 +3,7 @@ import './Generate.css'
 import { adjectives, nouns } from '../words'
 import PropTypes from 'prop-types'
 
-
+// How to pass generated word up to RPage
 function Generate(props) {
     console.log('Gprops is ' + props)
 
