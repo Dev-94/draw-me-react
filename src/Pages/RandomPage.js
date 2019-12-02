@@ -4,13 +4,12 @@ import Generate from '../Components/Generate'
 import { adjectives, nouns } from '../words'
 
 class RandomPage extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            words: '',
-        }
 
+    state = {
+        words: '',
     }
+
+
     // update state with words generated
     // ************ no passing info in, not firing off
     updateState = (randomWord) => {
@@ -40,7 +39,7 @@ class RandomPage extends React.Component {
 
     }
 
-
 }
+
 
 export default RandomPage
