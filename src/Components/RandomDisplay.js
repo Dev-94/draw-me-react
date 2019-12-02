@@ -3,7 +3,6 @@ import './RandomDisplay.css'
 import PropTypes from 'prop-types'
 
 function RandomDisplay(props) {
-    console.log('RDprops is ' + props)
 
     return (props.words === '') ? 'draw me' :
         <div className="rd-div">

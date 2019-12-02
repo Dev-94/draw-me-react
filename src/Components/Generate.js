@@ -3,28 +3,22 @@ import './Generate.css'
 import { adjectives, nouns } from '../words'
 import PropTypes from 'prop-types'
 
-// How to pass generated word up to RPage
 function Generate(props) {
-    console.log('Gprops is ' + props)
 
-    function generateWord(e) {
-        console.log('e is ' + e)
+    function buttonClicked(e) {
         let maxAdjective = adjectives.length
         let maxNoun = nouns.length
         let adjIdx = Math.floor(Math.random() * Math.floor(maxAdjective))
         let nounIdx = Math.floor(Math.random() * Math.floor(maxNoun))
-        console.log(adjectives[adjIdx] + ' ' + nouns[nounIdx])
         let randomWord = adjectives[adjIdx] + ' ' + nouns[nounIdx]
-        // this.updateState(randomWord)
-        props.clicked(e.target.value)
+        props.clicked(randomWord)
 
     }
     return (
         <div className="g-div" >
             <button
-                onClick={
-                    e => { e.preventDefault(); generateWord(e) }
-                }>
+                onClick={buttonClicked}
+            >
                 Generate
                     </button>
         </div >
