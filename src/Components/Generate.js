@@ -14,17 +14,14 @@ function Generate(props) {
         props.clicked(randomWord)
 
     }
+
     return (
         <div className="g-div" >
-            <button
-                onClick={buttonClicked}
-            >
+            <button onClick={buttonClicked}>
                 Generate
-                    </button>
+            </button>
         </div >
-
     )
-
 }
 
 

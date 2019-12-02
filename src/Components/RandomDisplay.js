@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 function RandomDisplay(props) {
 
     return (props.words === '') ? 'draw me' :
+
         <div className="rd-div">
             <span>
-                {/* may be need to bind props with new state */}
                 {props.words}
             </span>
         </div>

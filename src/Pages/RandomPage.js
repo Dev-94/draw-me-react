@@ -8,7 +8,6 @@ class RandomPage extends React.Component {
     }
 
     updateState = (randomWord) => {
-        console.log('RP is ' + randomWord)
         this.setState({
             words: randomWord
         })
