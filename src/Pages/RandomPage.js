@@ -30,7 +30,7 @@ class RandomPage extends React.Component {
                 />
                 <Generate
                     clicked={this.updateState}
-                    randomWord={this.randomWord}
+                    randomWord={this.state.words}
 
                 />
             </div >

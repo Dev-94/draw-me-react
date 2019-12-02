@@ -9,7 +9,7 @@ function RandomDisplay(props) {
         <div className="rd-div">
             <span>
                 {/* may be need to bind props with new state */}
-                {this.props.words}
+                {props.words}
             </span>
         </div>
 }
