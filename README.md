@@ -20,7 +20,7 @@
 
 ## Screenshots
 ![Image of landing page]
-(/public/Images/draw_me.png)
+(draw_me.png)
 
 ![Image of sketch idea]
-(/public/Images/draw_me.png)
+(floppy_tower.png)
