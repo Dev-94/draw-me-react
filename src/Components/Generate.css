@@ -1,18 +1,19 @@
 .g-div {
     display: block;
-    background-color: blanchedalmond;
     position: relative;
     bottom: 0;
     align-content: space-around;
     justify-content: space-between;
+    
 }
 button {
     color : red;
-    background-color: cornflowerblue;
+    background-color: whitesmoke;
     height: 100%;
     width: 100%;
     font-size: 10vh;
     border: solid 5px black;
+    font-family: 'Permanent Marker', cursive;
 
 }
 
