@@ -1,3 +1,12 @@
+.dm-div {
+    color: whitesmoke;
+    background-color: red;
+    width: 100%;
+    /* border-radius: 10%; */
+    text-justify: center;
+    font-size: 30vh;
+
+}
 .rd-div {
     color: red;
     background-color: aqua;

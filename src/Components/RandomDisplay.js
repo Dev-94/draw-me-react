@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 function RandomDisplay(props) {
 
-    return (props.words === '') ? 'draw me' :
+    return (props.words === '') ? <div className="dm-div">draw me</div> :
 
         <div className="rd-div">
             <span>
