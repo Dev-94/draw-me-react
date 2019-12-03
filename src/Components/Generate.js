@@ -18,7 +18,7 @@ function Generate(props) {
     return (
         <div className="g-div" >
             <button onClick={buttonClicked}>
-                Generate
+                GENERATE
             </button>
         </div >
     )

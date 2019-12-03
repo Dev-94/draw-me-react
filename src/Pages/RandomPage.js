@@ -3,6 +3,7 @@ import RandomDisplay from '../Components/RandomDisplay'
 import Generate from '../Components/Generate'
 
 class RandomPage extends React.Component {
+
     state = {
         words: '',
     }
