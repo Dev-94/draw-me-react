@@ -19,8 +19,6 @@
     - Add a link to have wine delivered while sketching.
 
 ## Screenshots
-![Image of landing page]
-(draw_me.png)
+![Image of landing page](draw_me.png)
 
-![Image of sketch idea]
-(floppy_tower.png)
+![Image of sketch idea](floppy_tower.png)
