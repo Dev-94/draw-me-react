@@ -26,5 +26,5 @@
 ![Screenshot of sketch idea](floppy_tower.png)
 
 ## Deployed Link
-[Surge Link](drawme.surge.sh)
-[Heroku Link](https://mighty-plateau-47335.herokuapp.com/)
+- [Surge Link](drawme.surge.sh)
+- [Heroku Link](https://mighty-plateau-47335.herokuapp.com/)
