@@ -1,11 +1,15 @@
 import React from 'react'
+import './Nav.css'
 
 function Nav() {
-    <button>Home</button>
-        <button>Sign Up</button>
-        <button>Log In</button>
-
-        <button>Log Out</button>
+    return (
+        <div className='NavBar'>
+            <button>Home</button>
+            <button>Sign Up</button>
+            <button>Log In</button>
+            <button>Log Out</button>
+        </div>
+    )
 }
 
 export default Nav
